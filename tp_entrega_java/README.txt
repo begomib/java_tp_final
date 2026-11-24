@@ -1,6 +1,15 @@
-# Michi & Co. — Trabajo final de Java
 
-E-commerce de adornos y regalos navideños, con una colección de gatitos decorativos. Backend Java 17 con Spring Boot, JPA, validaciones y MySQL; frontend HTML, CSS y JavaScript.
+
+video de MySQL , postman y front: 
+https://www.youtube.com/watch?v=VYYA1GqPtds
+
+
+
+
+
+# Navidad & Co. — Trabajo final de Java
+
+E-commerce de adornos y regalos navideños. Backend Java 17 con Spring Boot, JPA, validaciones y MySQL; frontend HTML, CSS y JavaScript.
 
 ## Requisitos
 
