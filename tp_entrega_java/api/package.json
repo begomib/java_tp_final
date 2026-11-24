@@ -1,0 +1,9 @@
+{
+  "name": "productos-api-launcher",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "mvn spring-boot:run",
+    "start:mysql": "mvn -Dspring-boot.run.profiles=mysql spring-boot:run"
+  }
+}

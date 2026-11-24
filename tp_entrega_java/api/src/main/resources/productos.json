@@ -1,0 +1,122 @@
+[
+  {
+    "nombre": "Gatito Noel de cerámica",
+    "descripcion": "Gatito decorativo con gorro rojo, pintado a mano. Un detalle especial para la mesa o el árbol.",
+    "precio": 12500.0,
+    "categoria": "Adornos",
+    "imagen": "assets/navidad/producto-1.png",
+    "stock": 12
+  },
+  {
+    "nombre": "Gato navideño colgante",
+    "descripcion": "Adorno de gatito con bufanda y cinta dorada para colgar en el árbol.",
+    "precio": 6500.0,
+    "categoria": "Adornos",
+    "imagen": "assets/navidad/producto-2.png",
+    "stock": 24
+  },
+  {
+    "nombre": "Casita de Navidad",
+    "descripcion": "Casita decorativa en tonos crema y rojo para armar un pequeño pueblo navideño.",
+    "precio": 9800.0,
+    "categoria": "Adornos",
+    "imagen": "assets/navidad/producto-3.png",
+    "stock": 10
+  },
+  {
+    "nombre": "Papá Noel de madera",
+    "descripcion": "Figura de madera con terminación artesanal para repisas y centros de mesa.",
+    "precio": 11500.0,
+    "categoria": "Adornos",
+    "imagen": "assets/navidad/producto-4.png",
+    "stock": 15
+  },
+  {
+    "nombre": "Estrella dorada para el árbol",
+    "descripcion": "Estrella de cinco puntas con acabado dorado para coronar tu árbol.",
+    "precio": 7200.0,
+    "categoria": "Adornos",
+    "imagen": "assets/navidad/producto-5.png",
+    "stock": 20
+  },
+  {
+    "nombre": "Esferas rojas y doradas x6",
+    "descripcion": "Set de seis esferas combinadas con terminaciones mate y brillantes.",
+    "precio": 8900.0,
+    "categoria": "Esferas",
+    "imagen": "assets/navidad/producto-6.png",
+    "stock": 30
+  },
+  {
+    "nombre": "Esferas de cristal nevado x4",
+    "descripcion": "Cuatro esferas transparentes con detalles de nieve para una Navidad luminosa.",
+    "precio": 10500.0,
+    "categoria": "Esferas",
+    "imagen": "assets/navidad/producto-7.png",
+    "stock": 18
+  },
+  {
+    "nombre": "Corona de pino y frutos rojos",
+    "descripcion": "Corona para la puerta con ramas de pino, frutos rojos y lazo de tela.",
+    "precio": 18900.0,
+    "categoria": "Coronas y guirnaldas",
+    "imagen": "assets/navidad/producto-8.png",
+    "stock": 8
+  },
+  {
+    "nombre": "Guirnalda de pino de 2 metros",
+    "descripcion": "Guirnalda verde para decorar escaleras, marcos y mesas de celebración.",
+    "precio": 14800.0,
+    "categoria": "Coronas y guirnaldas",
+    "imagen": "assets/navidad/producto-9.png",
+    "stock": 16
+  },
+  {
+    "nombre": "Árbol de Navidad de mesa",
+    "descripcion": "Pino decorativo compacto con base de madera, ideal para espacios pequeños.",
+    "precio": 22500.0,
+    "categoria": "Árboles",
+    "imagen": "assets/navidad/producto-10.png",
+    "stock": 6
+  },
+  {
+    "nombre": "Bota navideña bordada",
+    "descripcion": "Bota de tela roja con puño claro y detalles bordados para pequeños regalos.",
+    "precio": 9500.0,
+    "categoria": "Textiles",
+    "imagen": "assets/navidad/producto-11.png",
+    "stock": 14
+  },
+  {
+    "nombre": "Luces LED cálidas de 5 metros",
+    "descripcion": "Cadena de luces cálidas para uso interior. Crea un ambiente acogedor en casa.",
+    "precio": 13400.0,
+    "categoria": "Iluminación",
+    "imagen": "assets/navidad/producto-12.png",
+    "stock": 22
+  },
+  {
+    "nombre": "Vela aromática de canela",
+    "descripcion": "Vela en recipiente de vidrio con notas de canela y presentación para regalar.",
+    "precio": 7900.0,
+    "categoria": "Regalos",
+    "imagen": "assets/navidad/producto-13.png",
+    "stock": 5
+  },
+  {
+    "nombre": "Caja de regalo navideña",
+    "descripcion": "Caja reutilizable con lazo y diseño festivo para envolver tus regalos.",
+    "precio": 4800.0,
+    "categoria": "Regalos",
+    "imagen": "assets/navidad/producto-14.png",
+    "stock": 25
+  },
+  {
+    "nombre": "Bola de cristal navideña",
+    "descripcion": "Globo de nieve con casita y pinos en miniatura, sobre una base roja con detalles dorados.",
+    "precio": 16900,
+    "categoria": "Adornos",
+    "imagen": "assets/navidad/producto-15.png",
+    "stock": 12
+  }
+]

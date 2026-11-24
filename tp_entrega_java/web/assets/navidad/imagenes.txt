@@ -1,0 +1,24 @@
+IMAGENES DEL CATALOGO
+
+Generadas con IA mediante la herramienta integrada image_gen, con apariencia de fotografia de producto. No son fotos de articulos reales a la venta.
+
+Prompt base: Photorealistic premium Christmas ecommerce catalog photograph. Product centered and fully visible, warm ivory tabletop, dark forest green #002b22 background, subtle pine branches and warm gold bokeh, Christmas red #de382e, gold #f4b427, ivory accents. Genuine natural materials, soft studio lighting. No illustration, no text, no logo, no watermark.
+
+Temas de cada archivo:
+producto-1.png: cream ceramic cat ornament with red Santa hat and green scarf.
+producto-2.png: hanging ceramic cat ornament with red scarf and golden ribbon.
+producto-3.png: miniature ivory Christmas house, red snowy roof and warm windows.
+producto-4.png: handcrafted wooden Santa figurine.
+producto-5.png: five pointed gold tree topper star.
+producto-6.png: six red and gold baubles.
+producto-7.png: four transparent snowflake glass baubles.
+producto-8.png: pine wreath with red berries and red fabric bow.
+producto-9.png: loosely coiled pine garland with red berries.
+producto-10.png: miniature decorated Christmas tree in wooden base.
+producto-11.png: embroidered red Christmas stocking with ivory cuff.
+producto-12.png: warm white LED string lights, switched on.
+producto-13.png: cinnamon candle in clear glass, no label.
+producto-14.png: red reusable gift box with gold ribbon.
+
+Los archivos SVG anteriores se conservan como recursos de versiones previas; el catalogo actual utiliza PNG.
+producto-15.png: Photorealistic Christmas snow globe with ivory miniature house, snowy fir trees, red and gold base, ivory tabletop, forest green background and warm gold bokeh. Generated with built-in image_gen. No text or watermark.

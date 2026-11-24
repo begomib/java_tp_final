@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#002b22">
+    <title>Navidad & Co. | Una Navidad para recordar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Navidad y Co., inicio" data-view="inicio">
+                <span class="brand-mark" aria-hidden="true">N</span>
+        <span>NAVIDAD & CO.<small>NAVIDAD EN CADA RINCÓN</small></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <button class="nav-link is-active" type="button" data-view="inicio">Inicio</button>
+        <button class="nav-link" type="button" data-view="catalogo">Tienda</button>
+        <button class="nav-link" type="button" data-view="categorias">Categorías</button>
+        <button class="nav-link cart-link" type="button" data-view="carrito">Carrito <span id="cart-count">0</span></button>
+        <button class="nav-link" type="button" data-view="pedidos">Pedidos</button>
+        <button class="nav-link" type="button" data-view="admin">Administración</button>
+        <button class="nav-link nav-exit" type="button" data-action="salir">Salir</button>
+    </nav>
+</header>
+
+<main class="page-shell">
+    <div id="mensaje" class="notice" role="status" aria-live="polite" hidden></div>
+
+    <section class="view is-visible" id="view-catalogo" data-section="catalogo">
+        <div class="page-heading" id="portada">
+            <div class="hero-copy">
+                <p class="eyebrow">COLECCIÓN NAVIDAD · HECHO PARA CELEBRAR</p>
+                <h1>La magia empieza<br><span>en tu casa.</span></h1>
+                <p class="heading-note">Adornos, luces y pequeños detalles para una Navidad inolvidable. Descubrí nuestra colección y al gatito Noel.</p>
+                <button class="button button-dark hero-action" type="button" data-action="christmas">Descubrir los adornos</button>
+            </div>
+            <img class="hero-image" src="assets/navidad/producto-3.png" alt="Casita navideña con techo rojo y ventanas iluminadas">
+        </div>
+        <div class="catalog-toolbar">
+            <label class="search-field"><span aria-hidden="true">⌕</span><span class="visually-hidden">Buscar productos</span><input id="busqueda-productos" type="search" placeholder="Buscar por nombre o ID"></label>
+            <label class="filter-field"><span class="visually-hidden">Filtrar por categoría</span><select id="filtro-categoria"><option value="">Todas las categorías</option></select></label>
+            <button type="button" class="button button-quiet" data-view="admin">Administrar tienda</button>
+        </div>
+        <div id="catalogo-productos" class="product-grid" aria-live="polite"></div>
+        <p id="catalogo-vacio" class="empty-state" hidden>No hay productos que coincidan con la búsqueda.</p>
+    </section>
+
+    <section class="view" id="view-producto" data-section="producto" hidden>
+        <button class="button button-quiet back-catalog" type="button" data-view="catalogo">← Volver a la tienda</button>
+        <div id="detalle-producto"></div>
+    </section>
+    <section class="view" id="view-categorias" data-section="categorias" hidden>
+        <div class="section-heading"><div><p class="eyebrow">DETALLES QUE HACEN NAVIDAD</p><h1>Categorías</h1></div><p>Encontrá adornos para el árbol, la mesa y cada rincón de tu hogar.</p></div>
+        <div id="lista-categorias" class="category-list"></div>
+    </section>
+
+    <section class="view" id="view-carrito" data-section="carrito" hidden>
+        <div class="section-heading"><div><p class="eyebrow">TUS ELEGIDOS</p><h1>Carrito</h1></div><p>Revisá los detalles que elegiste para celebrar esta Navidad.</p></div>
+        <div class="checkout-layout">
+            <div id="lineas-carrito" class="cart-lines"></div>
+            <aside class="summary-panel"><p class="eyebrow">RESUMEN</p><div class="summary-row"><span>Productos</span><strong id="subtotal-carrito">$ 0</strong></div><div class="summary-row summary-total"><span>Total</span><strong id="total-carrito">$ 0</strong></div><label class="field-label" for="usuario-carrito">Realizar pedido a nombre de</label><select id="usuario-carrito" required></select><button id="realizar-pedido" class="button button-coral button-wide" type="button">Realizar pedido</button></aside>
+        </div>
+    </section>
+
+    <section class="view" id="view-pedidos" data-section="pedidos" hidden>
+        <div class="section-heading"><div><p class="eyebrow">SEGUIMIENTO</p><h1>Mis pedidos</h1></div><p>Consultá tus compras y seguí el estado de cada pedido.</p></div>
+        <div class="toolbar-row"><label class="filter-field"><span class="visually-hidden">Seleccionar cliente</span><select id="usuario-historial"></select></label><button type="button" class="button button-quiet" id="actualizar-historial">Actualizar historial</button></div>
+        <div id="historial-pedidos" class="order-list"></div>
+    </section>
+
+    <section class="view" id="view-admin" data-section="admin" hidden>
+        <div class="section-heading"><div><p class="eyebrow">PANEL INTERNO</p><h1>Administración</h1></div><p>Productos navideños, clientes y stock de la tienda.</p></div>
+        <section class="admin-section" aria-labelledby="titulo-stock-bajo"><div class="subsection-heading"><h2 id="titulo-stock-bajo">Alertas de stock</h2><span class="subtle">5 unidades o menos</span></div><div id="alertas-stock" class="stock-alerts"></div></section>
+        <section class="admin-section" aria-labelledby="titulo-producto-form">
+            <div class="subsection-heading"><h2 id="titulo-producto-form">Catálogo navideño</h2><button class="text-button" id="nuevo-producto" type="button">+ Agregar artículo</button></div>
+            <form id="form-producto" class="product-form" hidden>
+                <input type="hidden" id="producto-id">
+                <label>Nombre del artículo<input id="producto-nombre" maxlength="120" required></label>
+                <label>Categoría<select id="producto-categoria" required></select></label>
+                <label class="form-span">Descripción y recomendaciones<textarea id="producto-descripcion" maxlength="1000" rows="2" required></textarea></label>
+                <label>Precio<input id="producto-precio" type="number" min="0" step="0.01" required></label>
+                <label>Stock<input id="producto-stock" type="number" min="0" step="1" required></label>
+                <label class="form-span">URL de imagen<input id="producto-imagen" type="text" placeholder="https://... o assets/navidad/producto-10.png"></label>
+                <div class="form-actions form-span"><button class="button button-dark" type="submit">Guardar producto</button><button class="button button-quiet" id="cancelar-producto" type="button">Cancelar</button></div>
+            </form>
+            <div class="table-scroll"><table class="data-table"><thead><tr><th>ID</th><th>Producto</th><th>Categoría</th><th>Precio</th><th>Stock</th><th>Acciones</th></tr></thead><tbody id="tabla-productos"></tbody></table></div>
+        </section>
+        <div class="admin-columns">
+            <section class="admin-section" aria-labelledby="titulo-admin-categorias"><div class="subsection-heading"><h2 id="titulo-admin-categorias">Categorías</h2></div><form id="form-categoria-admin" class="compact-form"><label for="nombre-categoria-admin">Agregar categoría</label><div><input id="nombre-categoria-admin" maxlength="80" required><button class="button button-dark" type="submit">Agregar</button></div></form><div id="admin-categorias" class="admin-list"></div></section>
+            <section class="admin-section" aria-labelledby="titulo-admin-usuarios">
+                <div class="subsection-heading"><h2 id="titulo-admin-usuarios">Usuarios</h2></div>
+                <form id="form-usuario" class="compact-form">
+                    <input type="hidden" id="usuario-id">
+                    <label for="usuario-nombre">Registrar o editar usuario</label>
+                    <div><input id="usuario-nombre" placeholder="Nombre" maxlength="120" required><input id="usuario-email" type="email" placeholder="Email (opcional)" maxlength="160"><button class="button button-dark" id="guardar-usuario" type="submit">Agregar</button><button class="button button-quiet" id="cancelar-usuario" type="button" hidden>Cancelar</button></div>
+                </form>
+                <div id="admin-usuarios" class="admin-list"></div>
+            </section>
+        </div>
+        <section class="admin-section" aria-labelledby="titulo-admin-pedidos"><div class="subsection-heading"><h2 id="titulo-admin-pedidos">Gestionar estados de pedidos</h2></div><div id="admin-pedidos" class="order-list"></div></section>
+    </section>
+</main>
+
+<footer class="site-footer"><span>NAVIDAD & CO.</span><span>Pequeños detalles. Grandes celebraciones.</span></footer>
+<script src="js/store.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+  <defs>
+    <g id="pine"><path d="M0-31L-13-10H-7L-20 10H-10L-26 29H26L10 10H20L7-10H13Z" fill="currentColor"/><path d="M-2 27V38H2V27" fill="#8e6e57"/></g>
+    <g id="triangle"><path d="M0-30L-23 29H23Z" fill="currentColor"/><path d="M-2 28V38H2V28" fill="#8e6e57"/><g fill="#fff8e8"><circle cy="-11" r="2"/><circle cx="-6" cy="4" r="2"/><circle cx="7" cy="12" r="2"/><circle cx="-9" cy="21" r="2"/></g></g>
+    <g id="branch" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><path d="M0-27V31M-13-17L0-6L13-17M-17-4L0 9L17-4M-19 11L0 24L19 11"/></g>
+    <g id="snow" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M-7 0H7M0-7V7M-5-5L5 5M-5 5L5-5"/></g>
+  </defs>
+  <rect width="480" height="480" fill="#f7efde"/>
+  <g opacity=".42">
+    <use href="#pine" x="42" y="45" color="#9e493e"/><use href="#triangle" x="164" y="49" color="#c98270"/>
+    <use href="#branch" x="284" y="46" color="#566650"/><use href="#pine" x="408" y="51" color="#b85b49"/>
+    <use href="#triangle" x="104" y="162" color="#af4c3e"/><use href="#pine" x="225" y="162" color="#d1977f"/>
+    <use href="#triangle" x="349" y="162" color="#8d6150"/><use href="#branch" x="453" y="160" color="#a85242"/>
+    <use href="#branch" x="39" y="284" color="#a95040"/><use href="#triangle" x="163" y="282" color="#d19a82"/>
+    <use href="#pine" x="286" y="286" color="#9f453c"/><use href="#triangle" x="407" y="284" color="#7e8870"/>
+    <use href="#pine" x="102" y="406" color="#be7a63"/><use href="#branch" x="225" y="402" color="#68765d"/>
+    <use href="#triangle" x="346" y="404" color="#b35442"/><use href="#pine" x="452" y="406" color="#d39a86"/>
+  </g>
+  <g color="#c19463" opacity=".42">
+    <use href="#snow" x="99" y="53"/><use href="#snow" x="223" y="90"/><use href="#snow" x="350" y="53"/>
+    <use href="#snow" x="42" y="172"/><use href="#snow" x="165" y="194"/><use href="#snow" x="286" y="164"/>
+    <use href="#snow" x="99" y="282"/><use href="#snow" x="226" y="307"/><use href="#snow" x="349" y="281"/>
+    <use href="#snow" x="42" y="414"/><use href="#snow" x="164" y="439"/><use href="#snow" x="286" y="407"/>
+    <circle cx="70" cy="112" r="2"/><circle cx="302" cy="109" r="2"/><circle cx="385" cy="222" r="2"/><circle cx="185" cy="365" r="2"/>
+  </g>
+</svg>
